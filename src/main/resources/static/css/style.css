@@ -1,0 +1,21 @@
+body{
+	background-color: #e6e6e6;
+}
+
+#formulario{
+	align-content: center;
+	padding: 10%
+}
+
+#contenido{
+	align-content: center;
+	padding: 10%
+}
+
+#borrar{
+	text-align: center;
+}
+
+.titulo{
+	text-align: center;
+}
