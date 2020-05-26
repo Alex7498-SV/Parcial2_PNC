@@ -30,10 +30,12 @@
 		
 			<form th:action="@{/guardarCat}" th:object="${categoria}" method="post">
 			  <div class="form-row">
-			    <div class="form-group col-md-6">
-			      <input type="text" class="form-control" placeholder="Titulo"  th:field="*{categoria}">
+			    <div class="form-group col-md-12">
+			      <input type="text" class="form-control" placeholder="Categoria"  th:field="*{categoria}">
 			      <span th:errors="*{categoria}" style="color:#FF0000"></span>
+			    
 			    </div>
+			    <br>
 		  	 <button type="submit" class="btn btn-info">Guardar</button>
 			</form>
 			<hr>

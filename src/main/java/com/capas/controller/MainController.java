@@ -31,7 +31,7 @@ public class MainController {
 	@Autowired
 	private CategoriasService catServ;
 	
-	@RequestMapping("/inicio")
+	@RequestMapping("/index")
 	public ModelAndView inicio() {
 		ModelAndView mav = new ModelAndView();
 		mav.addObject("msg", "");
@@ -65,15 +65,8 @@ public class MainController {
 		ModelAndView mav = new ModelAndView();
 		
 		Categorias cat = new Categorias();
-		List<Categorias> categorias = null;
-		
-		try {
-			mav.addObject("categoria", cat);
-			mav.setViewName("Icategoria");
-		}
-		catch(Exception e){
-			e.printStackTrace();
-		}
+		mav.addObject("categoria", cat);
+		mav.setViewName("Icategoria");
 		
 		return mav;
 	}
